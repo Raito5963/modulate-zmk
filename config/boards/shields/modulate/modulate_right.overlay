@@ -1,4 +1,4 @@
-#include "ycorne.dtsi"
+#include "modulate.dtsi"
 
 &default_transform {
         col-offset = <6>;
