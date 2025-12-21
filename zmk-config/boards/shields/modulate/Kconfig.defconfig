@@ -1,0 +1,16 @@
+if SHIELD_MODULATE_LEFT
+
+config ZMK_KEYBORAD_NAME
+    default "Modulate"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MODULATE_LEFT || SHIELD_MODULATE_RIGHT
+
+config ZMK_SPLIT
+        default y
+
+endif

@@ -1,0 +1,11 @@
+file_format: "1"
+id: modulate
+name: Modulate
+type: shield
+url: https://github.com/Raito5963/modulate-zmk
+requires: [xiao_ble]
+features:
+  - keys
+siblings:
+  - modulate_left
+  - modulate_right

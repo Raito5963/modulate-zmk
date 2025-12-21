@@ -1,0 +1,12 @@
+#include "modulate.dtsi"
+
+&kscan0 {
+        col-gpios
+                = <&xiao_ble 6 GPIO_ACTIVE_HIGH>
+                , <&xiao_ble 7 GPIO_ACTIVE_HIGH>
+                , <&xiao_ble 8 GPIO_ACTIVE_HIGH>
+                , <&xiao_ble 9 GPIO_ACTIVE_HIGH>
+                , <&xiao_ble 10 GPIO_ACTIVE_HIGH>
+                , <&gpio0 9 GPIO_ACTIVE_HIGH>
+                ;
+};
