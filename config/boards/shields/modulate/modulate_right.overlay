@@ -1,16 +1,19 @@
 #include "modulate.dtsi"
 
 &default_transform {
-        col-offset = <6>;
+    // 右手側は全体の6列目からスタートさせる
+    col-offset = <6>;
 };
 
 &kscan0 {
-        col-gpios
-                = <&gpio0 9 GPIO_ACTIVE_HIGH>
-                , <&gpio1 15 GPIO_ACTIVE_HIGH>
-                , <&gpio1 14 GPIO_ACTIVE_HIGH>
-                , <&gpio1 13 GPIO_ACTIVE_HIGH>
-                , <&gpio1 12 GPIO_ACTIVE_HIGH>
-                , <&gpio1 11 GPIO_ACTIVE_HIGH>
-                ;
+    // 右手側の列ピン（6本）
+    // ※左右でピンの順番が逆転している場合は、配線に合わせて並び替えてください
+    col-gpios
+        = <&gpio0 9  GPIO_ACTIVE_HIGH>
+        , <&gpio1 15 GPIO_ACTIVE_HIGH>
+        , <&gpio1 14 GPIO_ACTIVE_HIGH>
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>
+        , <&gpio1 12 GPIO_ACTIVE_HIGH>
+        , <&gpio1 11 GPIO_ACTIVE_HIGH>
+        ;
 };
